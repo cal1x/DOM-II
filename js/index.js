@@ -20,3 +20,19 @@ introParagraph.addEventListener('mouseout', (event) => {
   introParagraph.style.transform = 'scale(1)';
 });
 
+// const header = document.querySelector('.main-navigation');
+// header.addEventListener('focus', (event) => {
+//   header.style.color = 'blue';
+//   header.style.fontWeight = 'bold';
+// })
+
+// Wheel event on body - Change color on scroll
+const body = document.querySelector('body');
+body.addEventListener('wheel', () => {
+  body.style.backgroundColor = "pink";
+})
+
+// Key event on keydown back to default
+body.addEventListener('keydown', () => {
+  body.style.backgroundColor = 'white';
+})
